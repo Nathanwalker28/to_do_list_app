@@ -20,10 +20,6 @@ $sql_select = "SELECT * FROM todo";
 $query = mysqli_query($connexion, $sql_select);
 $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
-
-
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,7 +72,7 @@ $result = mysqli_fetch_all($query, MYSQLI_ASSOC);
                     <tr>
                         <td><?= $value['id'] ?></td>
                         <td><?= $value['tasks'] ?></td>
-                        <td><button class="btn btn-danger"><a href="delete.php?id=<?= $value['id'] ?>" class="text-decoration-none text-color-white">supprimer</a></button></td>
+                        <td><button class="btn btn-danger"><a href="delete.php?id=<?= $value['id'] ?>" class="text-decoration-none text-white">supprimer</a></button></td>
                     </tr>
                 <?php endforeach ?>
             </tbody>

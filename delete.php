@@ -8,7 +8,7 @@ if(isset($_GET['id'])) {
     $sql = "DELETE FROM todo WHERE id = $id";
     $query = mysqli_query($connexion, $sql);
 
-    header('location:index.php');
+   header('location:index.php');
 }
 
 ?>
